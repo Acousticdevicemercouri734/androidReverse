@@ -26,22 +26,27 @@ Powered by an embedded Radare2 engine, the app provides deep insights into nativ
 * **Call Graph & Xref Tracing:** Instantly generate depth-adjustable graphs mapping incoming/outgoing calls and field reads/writes.
 * **Block Inspector:** Deep-dive into raw assembly instructions, memory addresses, and execution heuristics.
 * **Multi-Mode Decompilation:** Switch seamlessly between C pseudo-code, Hex dumps, and raw Assembly.
+* **Binary Metadata & Workflow:** View detailed Binary Info metadata, rename binary functions, and add custom comments directly within the analysis view to track your progress.
 
 ### 📝 Intelligent Code Inspection & Navigation
 Built around the high-performance Sora Editor with TextMate syntax highlighting (Darcula theme). 
 
 > **⚠️ Note on Code Editing:** *Android Reverse is currently focused on advanced code analysis and inspection. Live code editing and APK recompilation are not yet available in the current release.*
 
-* **Multi-Engine Java Decompilation:** Choose between Jadx and Vineflower to decompile Dalvik bytecode back to Java on the fly.
+* **Massive Decompiler Arsenal:** Seamlessly switch between CFR, Procyon, JD-Core, Krakatau, Jadx, Vineflower, and Jadx Fallback for maximum code recovery.
+* **Intermediate Representations (IR):** Advanced parsing utilizing Smali IR and Jadx IR.
+* **Smart Smali Explainer:** Select specific lines of Smali bytecode to instantly generate an explanation of the code's execution behavior.
 * **Smart Smali Navigation:** Jump directly to class and method definitions from Smali registers with built-in symbol resolution.
 * **Class Structure Compass:** Instantly filter and jump to methods or fields within massive classes.
 
 ### 🛡️ Resilient Resource & Package Decoding
 * **Universal App Extraction:** Extract, merge, and parse `.apk`, `.xapk`, and split `.apks` directly from local storage or installed system apps.
+* **Cross-Platform Support:** Dedicated reverse engineering parsing and support for modern frameworks, including Flutter (Unflutter) and Unity (il2cpp).
 * **Hardened AXML Decoding:** Custom `AXMLPrinter` implementation utilizing reflection to bypass modern `resources.arsc` obfuscation and anti-decompilation tricks.
 * **Deep ARSC Parsing:** Navigate complex resource tables, string pools, and XML attribute mappings through a unified tree view.
 
 ### 🛠️ Pro-Workflow Tools
+* **Built-in Data Converter:** On-the-fly tooling for Text/Base64, Hex/Decimal, URL Encode/Decode, Unicode Escaping, XOR Cipher mapping, and Color Hex Preview (See referenced tool: `1000190267.jpg`).
 * **Deep Memory Search:** Lightning-fast, regex-supported hexadecimal and string searching across Smali, class names, and native binary patterns.
 * **Global Notebook:** A persistent, built-in notebook system to document reverse-engineering progress, track offsets, and save snippets across sessions.
 * **Class Bookmarking:** Pin critical classes for rapid access during complex analysis sessions.
@@ -57,8 +62,6 @@ Built around the high-performance Sora Editor with TextMate syntax highlighting 
 | Call Graph Tracing | Resilient AXML Decoding | Global Notebook |
 |:---:|:---:|:---:|
 | ![CallGraph](docs/screenshots/placeholder_callgraph.png) <br> *Depth-adjustable cross-reference mapping* | ![XML](docs/screenshots/placeholder_xml.png) <br> *TextMate-highlighted XML viewing* | ![Notebook](docs/screenshots/placeholder_notebook.png) <br> *Persistent multi-session note tracking* |
-
-*(Screenshots coming soon)*
 
 ---
 
