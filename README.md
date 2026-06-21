@@ -23,7 +23,7 @@ Eight engines selectable per-class with a single tap:
 | **Vineflower** | Fernflower fork, strong on control flow |
 | **Jadx** | Primary engine |
 | **Jadx Fallback** | Activates automatically on Jadx failure |
-| **Jadx IR / Smali IR** | Raw intermediate representations |
+| **Jadx IR** | Raw intermediate representations |
 
 ---
 
